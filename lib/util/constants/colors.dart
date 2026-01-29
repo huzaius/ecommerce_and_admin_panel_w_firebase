@@ -2,23 +2,23 @@ import 'package:flutter/material.dart';
 
 class TColors {
   // App theme colors
-  static const Color primary = Color(0xFFFFE400);
+  static const Color primary = Color(0xFF4b68ff);
   static const Color secondary = Color(0xFF272727);
   static const Color secondaryLight = Color(0xC9346DAE);
   static const Color primaryBackground = Color(
     0xFFCCFBF1,
   ); // Primary Color Background
 
-  //Gradient Colors
-  static const Color gradientStart = Color(0xFFCCFBF1);
-  static const Color gradientEnd = Color(0xFF272727);
-  static const Gradient linearGradient = LinearGradient(
-    begin: Alignment(0.0, 0),
-    end: Alignment(0.707, -0.707),
-    stops: [0.0, 1.0],
-    tileMode: TileMode.decal,
-    colors: [gradientStart, Color(0xFF272727), gradientEnd],
-  );
+  // //Gradient Colors
+  // static const Color gradientStart = Color(0xFFCCFBF1);
+  // static const Color gradientEnd = Color(0xFF272727);
+  // static const Gradient linearGradient = LinearGradient(
+  //   begin: Alignment(0.0, 0),
+  //   end: Alignment(0.707, -0.707),
+  //   stops: [0.0, 1.0],
+  //   tileMode: TileMode.decal,
+  //   colors: [gradientStart, Color(0xFF272727), gradientEnd],
+  // );
 
   static const Color secondaryBackground = Color(
     0xFFFFE4E6,
