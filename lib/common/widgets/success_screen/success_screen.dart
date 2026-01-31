@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:t_shop/common/styles/spacing_styles.dart';
 
 import '../../../util/constants/sizes.dart';
@@ -27,11 +28,8 @@ class SuccessScreen extends StatelessWidget {
             width: double.infinity,
             child: Column(
               children: [
-                //image
-                Image(
-                  image: AssetImage(image),
-                  width: THelperFunctions.screenWidth() * .6,
-                ),
+                // Lottie image
+                Lottie.asset(image, width: THelperFunctions.screenWidth() * .6),
                 SizedBox(height: TSizes.spaceBtwSections),
 
                 //Title & Subtitle
