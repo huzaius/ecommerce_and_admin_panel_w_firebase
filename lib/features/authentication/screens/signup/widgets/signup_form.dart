@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:t_shop/features/authentication/screens/signup/verify_email.dart';
 import 'package:t_shop/features/authentication/screens/signup/widgets/terms_and_conditions.dart';
 
 import '../../../../../util/constants/sizes.dart';
@@ -86,7 +89,7 @@ class TSignUpForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(VerifyEmailScreen()),
               child: Text(TTexts.tCreateAccount),
             ),
           ),
