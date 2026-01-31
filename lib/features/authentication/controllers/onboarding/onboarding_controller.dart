@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../screens/login/login.dart';
+
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
 
@@ -9,9 +11,11 @@ class OnBoardingController extends GetxController {
   Rx<int> currentPageIndex = 0.obs; //can use final keyword
 
   /// Update Current Index when Page scroll
+  // ignore: strict_top_level_inference
   void updatePageIndicator(index) => currentPageIndex.value = index;
 
   /// Jump to specific dot selected page
+  // ignore: strict_top_level_inference
   void dotNavigatorClick(index) {
     currentPageIndex.value = index;
     pageController.jumpTo(index);
@@ -20,7 +24,7 @@ class OnBoardingController extends GetxController {
   /// Update Current index & Jump to next page
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      //Get.to(LoginScreen());
+      Get.offAll(LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
