@@ -34,7 +34,7 @@ class TTexts {
   static const String ttTermsAndConditions = "Terms & Conditions";
   static const String tGetStarted = "Get Started";
   static const String tForgetPassword = "Forget Password?";
-  static const String homeAppbarSubTitle = "Coding With T";
+  static const String homeAppbarSubTitle = "Huzaius";
   static const String tSignInWithGoogle = "Sign-In with Google";
 
   // -- Validation --

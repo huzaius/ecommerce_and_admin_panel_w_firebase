@@ -4,6 +4,8 @@ import 'package:iconsax/iconsax.dart';
 import 'package:t_shop/util/constants/colors.dart';
 import 'package:t_shop/util/helpers/helper_functions.dart';
 
+import 'features/shop/screens/home/home.dart';
+
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
 
@@ -46,7 +48,7 @@ class NavigationController extends GetxController {
   // }
 
   final screens = [
-    Container(color: Colors.blue),
+    HomeScreen(),
     Container(color: Colors.red),
     Container(color: Colors.purple),
     Container(color: Colors.yellow),
