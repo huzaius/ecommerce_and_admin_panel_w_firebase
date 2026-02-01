@@ -72,6 +72,7 @@ flutter:
      - assets/images/
      - assets/images/on_boarding_images/
      - assets/images/animations/
+     - assets/icons/categories/
 #     - assets/fonts/
 
   #   - images/a_dot_ham.jpeg
