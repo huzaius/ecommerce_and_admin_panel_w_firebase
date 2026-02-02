@@ -9,6 +9,7 @@ import 'package:t_shop/util/helpers/helper_functions.dart';
 
 import '../../../../util/constants/colors.dart';
 import '../../icons/circular_icons.dart';
+import '../../texts/brand_title_with_verified_icon.dart';
 import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
 
@@ -82,6 +83,7 @@ class TProductCardVertical extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: TSizes.sm),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TProductTitleText(
                     title: 'Green Nike Air shoes',
@@ -89,25 +91,12 @@ class TProductCardVertical extends StatelessWidget {
                   ),
                   SizedBox(height: TSizes.spaceBtwItems / 2),
 
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(width: TSizes.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  TBrandTitleWithVerifiedIcon(title: 'Nike'),
                 ],
               ),
             ),
+
+            //Add Spacer to keep the height of each box same in multiple and single lines
             Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
