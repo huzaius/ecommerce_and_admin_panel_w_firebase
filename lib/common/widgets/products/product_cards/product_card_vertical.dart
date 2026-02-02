@@ -9,6 +9,7 @@ import 'package:t_shop/util/helpers/helper_functions.dart';
 
 import '../../../../util/constants/colors.dart';
 import '../../icons/circular_icons.dart';
+import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
 
 class TProductCardVertical extends StatelessWidget {
@@ -104,75 +105,41 @@ class TProductCardVertical extends StatelessWidget {
                       ),
                     ],
                   ),
-
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      //Price
-                      TProductPriceText(price: '35.00', isLarge: false),
-
-                      //Add to cart button
-                      Container(
-                        decoration: BoxDecoration(
-                          color: TColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(TSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(
-                              TSizes.productImageRadius,
-                            ),
-                          ),
-                        ),
-                        child: SizedBox(
-                          width: TSizes.iconLg * 1.2,
-                          height: TSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(Iconsax.add, color: TColors.white),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  //Button
-
-                  //Pricing
                 ],
               ),
+            ),
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                //Price
+                Padding(
+                  padding: const EdgeInsets.only(left: TSizes.sm),
+                  child: TProductPriceText(price: '35.00', isLarge: false),
+                ),
+
+                //Add to cart button
+                Container(
+                  decoration: BoxDecoration(
+                    color: TColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(TSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(TSizes.productImageRadius),
+                    ),
+                  ),
+                  child: SizedBox(
+                    width: TSizes.iconLg * 1.2,
+                    height: TSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(Iconsax.add, color: TColors.white),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
       ),
-    );
-  }
-}
-
-class TProductPriceText extends StatelessWidget {
-  const TProductPriceText({
-    super.key,
-    this.currencySign = '\$',
-    required this.price,
-    this.maxLines = 1,
-    this.isLarge = false,
-    this.lineThrough = false,
-  });
-
-  final String currencySign, price;
-  final int maxLines;
-  final bool isLarge;
-  final bool lineThrough;
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      currencySign + price,
-      maxLines: maxLines,
-      overflow: TextOverflow.ellipsis,
-      style: isLarge
-          ? Theme.of(context).textTheme.headlineMedium!.apply(
-              decoration: lineThrough ? TextDecoration.lineThrough : null,
-            )
-          : Theme.of(context).textTheme.titleLarge!.apply(
-              decoration: lineThrough ? TextDecoration.lineThrough : null,
-            ),
     );
   }
 }
