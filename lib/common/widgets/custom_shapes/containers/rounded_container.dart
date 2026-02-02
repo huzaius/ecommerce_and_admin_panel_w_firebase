@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+import 'package:t_shop/util/constants/colors.dart';
+import 'package:t_shop/util/constants/sizes.dart';
+
+class TRoundedContainer extends StatelessWidget {
+  const TRoundedContainer({
+    super.key,
+    this.weight,
+    this.height,
+    this.radius = TSizes.cardRadiusLg,
+    this.child,
+    this.showBorder = false,
+    this.borderColor = TColors.borderPrimary,
+    this.backgroundColor = TColors.white,
+    this.margin,
+    this.padding,
+  });
+
+  final double? weight;
+  final double? height;
+  final double? radius;
+  final Widget? child;
+  final bool showBorder;
+  final Color borderColor;
+  final Color backgroundColor;
+  final EdgeInsets? margin;
+  final EdgeInsets? padding;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: weight,
+      height: height,
+      margin: margin,
+      padding: padding,
+      decoration: BoxDecoration(
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(radius!),
+        border: showBorder ? Border.all(color: borderColor) : null,
+      ),
+      child: child,
+    );
+  }
+}
