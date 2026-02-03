@@ -49,6 +49,7 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
             ),
@@ -69,6 +70,7 @@ class HomeScreen extends StatelessWidget {
             ),
             SizedBox(height: TSizes.spaceBtwSections),
 
+            //Popular Products Heading
             Padding(
               padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: TSectionHeading(
