@@ -6,6 +6,7 @@ import 'package:t_shop/util/helpers/helper_functions.dart';
 
 import 'features/shop/screens/home/home.dart';
 import 'features/shop/screens/store/store_screen.dart';
+import 'features/shop/screens/wishlist/wishlist.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -51,7 +52,7 @@ class NavigationController extends GetxController {
   final screens = [
     HomeScreen(),
     StoreScreen(),
-    Container(color: Colors.purple),
+    FavoriteScreen(),
     Container(color: Colors.yellow),
   ];
 }
