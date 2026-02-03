@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../util/constants/colors.dart';
 import '../../../util/constants/sizes.dart';
 import '../../../util/helpers/helper_functions.dart';
 
@@ -34,8 +35,8 @@ class TCircularImage extends StatelessWidget {
         color:
             backgroundColor ??
             (THelperFunctions.isDarkMode(context)
-                ? Colors.black
-                : Colors.white),
+                ? TColors.black
+                : TColors.white),
         borderRadius: BorderRadius.circular(100),
       ),
       child: Center(
