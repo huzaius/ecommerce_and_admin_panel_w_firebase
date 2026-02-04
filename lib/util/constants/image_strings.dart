@@ -157,4 +157,7 @@ class TImages {
 
   //Profile
   static const String user = "assets/images/profile/user.png";
+  static const String user_2 = "assets/images/profile/user-2.png";
+  static const String user_3 = "assets/images/profile/user-3.jpg";
+  static const String user_4 = "assets/images/profile/user-4.jpg";
 }

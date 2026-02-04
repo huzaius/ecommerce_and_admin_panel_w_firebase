@@ -13,7 +13,7 @@ class TProfileTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: TCircularImage(
-        image: TImages.productImage11,
+        image: TImages.user,
         width: 50,
         height: 50,
         padding: 0,
