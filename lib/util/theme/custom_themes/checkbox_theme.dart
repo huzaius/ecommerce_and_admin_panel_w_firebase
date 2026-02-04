@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_shop/util/constants/colors.dart';
 
 class TCheckboxTheme {
   TCheckboxTheme._(); //TO avoid creating instances
@@ -8,13 +9,13 @@ class TCheckboxTheme {
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.white;
+        return TColors.white;
       }
-      return Colors.black;
+      return TColors.black;
     }),
     fillColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.blue;
+        return TColors.primary;
       }
       return Colors.transparent;
     }),
@@ -25,13 +26,13 @@ class TCheckboxTheme {
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.white;
+        return TColors.white;
       }
-      return Colors.black;
+      return TColors.black;
     }),
     fillColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.blue;
+        return TColors.primary;
       }
       return Colors.transparent;
     }),

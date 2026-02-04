@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t_shop/util/constants/colors.dart';
 
 class TOutlinedButtonTheme {
   TOutlinedButtonTheme._(); //TO avoid class initialization
@@ -7,11 +8,11 @@ class TOutlinedButtonTheme {
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.black,
-      side: BorderSide(color: Colors.red),
+      foregroundColor: TColors.black,
+      side: BorderSide(color: TColors.red),
       textStyle: TextStyle(
         fontSize: 16,
-        color: Colors.black,
+        color: TColors.black,
         fontWeight: FontWeight.w600,
       ),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
@@ -22,11 +23,11 @@ class TOutlinedButtonTheme {
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      side: BorderSide(color: Colors.red),
+      foregroundColor: TColors.white,
+      side: BorderSide(color: TColors.red),
       textStyle: TextStyle(
         fontSize: 16,
-        color: Colors.black,
+        color: TColors.black,
         fontWeight: FontWeight.w600,
       ),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
