@@ -8,6 +8,7 @@ import 'package:t_shop/common/widgets/texts/section_heading.dart';
 
 import '../../../../common/widgets/list_tile/profile_tile.dart';
 import '../../../../util/constants/sizes.dart';
+import '../address/address.dart';
 import '../profile/profile.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -53,7 +54,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: "My Address",
                     subtitle: "Set Shopping delivery address",
-                    onTap: () {},
+                    onTap: () => Get.to(UserAddressScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.shopping_cart,

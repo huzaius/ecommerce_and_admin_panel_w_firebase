@@ -5,7 +5,6 @@ import 'package:t_shop/util/constants/sizes.dart';
 class TRoundedContainer extends StatelessWidget {
   const TRoundedContainer({
     super.key,
-    this.weight,
     this.height,
     this.radius = TSizes.cardRadiusLg,
     this.child,
@@ -14,9 +13,10 @@ class TRoundedContainer extends StatelessWidget {
     this.backgroundColor = TColors.white,
     this.margin,
     this.padding,
+    this.width,
   });
 
-  final double? weight;
+  final double? width;
   final double? height;
   final double? radius;
   final Widget? child;
@@ -29,7 +29,7 @@ class TRoundedContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: weight,
+      width: width,
       height: height,
       margin: margin,
       padding: padding,
