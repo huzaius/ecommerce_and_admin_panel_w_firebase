@@ -5,9 +5,11 @@ import 'package:t_shop/common/widgets/appBar/appbar.dart';
 import 'package:t_shop/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:t_shop/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:t_shop/common/widgets/texts/section_heading.dart';
+import 'package:t_shop/features/shop/screens/cart/widgets/cart.dart';
 
 import '../../../../common/widgets/list_tile/profile_tile.dart';
 import '../../../../util/constants/sizes.dart';
+import '../../../shop/order/widgets/order.dart';
 import '../address/address.dart';
 import '../profile/profile.dart';
 
@@ -54,19 +56,19 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: "My Address",
                     subtitle: "Set Shopping delivery address",
-                    onTap: () => Get.to(UserAddressScreen()),
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.shopping_cart,
                     title: "My Cart",
                     subtitle: "Add, remove products and move to cart",
-                    onTap: () {},
+                    onTap: () => Get.to(() => CartScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.bag_tick,
                     title: "My Orders",
                     subtitle: "In progress and completed orders",
-                    onTap: () {},
+                    onTap: () => Get.to(() => OrderScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.bank,
