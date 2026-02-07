@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:t_shop/common/widgets/appBar/appbar.dart';
 import 'package:t_shop/common/widgets/appBar/tabbar.dart';
 import 'package:t_shop/common/widgets/brands/brand_card.dart';
@@ -11,6 +12,7 @@ import 'package:t_shop/util/helpers/helper_functions.dart';
 
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../util/constants/colors.dart';
+import '../cart/widgets/cart.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -22,7 +24,7 @@ class StoreScreen extends StatelessWidget {
       child: Scaffold(
         appBar: TAppBar(
           title: Text("Store"),
-          actions: [TCartCounterIcon(onPressed: () {})],
+          actions: [TCartCounterIcon(onPressed: () => Get.to(CartScreen()))],
         ),
         body: NestedScrollView(
           headerSliverBuilder: (_, innerBoxIsScrolled) {
