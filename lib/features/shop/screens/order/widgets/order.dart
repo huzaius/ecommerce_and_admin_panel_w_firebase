@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:t_shop/features/shop/order/widgets/order_list_items.dart';
 import 'package:t_shop/util/constants/sizes.dart';
 
-import '../../../../common/widgets/appBar/appbar.dart';
+import '../../../../../common/widgets/appBar/appbar.dart';
+import 'order_list_items.dart';
 
 class OrderScreen extends StatelessWidget {
   const OrderScreen({super.key});

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../common/widgets/image_text_widgets/vertical_image.dart';
 import '../../../../../util/constants/colors.dart';
 import '../../../../../util/constants/image_strings.dart';
 import '../../../../../util/helpers/helper_functions.dart';
+import '../../sub_category/sub_categories.dart';
 
 class THomeCategories extends StatelessWidget {
   const THomeCategories({super.key});
@@ -23,7 +25,7 @@ class THomeCategories extends StatelessWidget {
             backgroundColor: THelperFunctions.isDarkMode(context)
                 ? TColors.black
                 : TColors.white,
-            onTap: () {},
+            onTap: () => Get.to(() => SubCategoriesScreen()),
           );
         },
       ),

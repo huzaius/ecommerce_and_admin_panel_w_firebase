@@ -9,7 +9,7 @@ import 'package:t_shop/features/shop/screens/cart/widgets/cart.dart';
 
 import '../../../../common/widgets/list_tile/profile_tile.dart';
 import '../../../../util/constants/sizes.dart';
-import '../../../shop/order/widgets/order.dart';
+import '../../../shop/screens/order/widgets/order.dart';
 import '../address/address.dart';
 import '../profile/profile.dart';
 
