@@ -12,6 +12,7 @@ import 'package:t_shop/util/helpers/helper_functions.dart';
 
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../util/constants/colors.dart';
+import '../brands/all_brands.dart';
 import '../cart/widgets/cart.dart';
 
 class StoreScreen extends StatelessWidget {
@@ -57,7 +58,7 @@ class StoreScreen extends StatelessWidget {
                       //Feature brands
                       TSectionHeading(
                         title: "Feature Brands",
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => AllBrandsScreen()),
                       ),
                       SizedBox(height: TSizes.spaceBtwItems / 1.5),
 

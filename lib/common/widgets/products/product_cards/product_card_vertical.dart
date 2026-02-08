@@ -32,6 +32,7 @@ class TProductCardVertical extends StatelessWidget {
           color: dark ? TColors.darkGrey : TColors.lightGrey,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //THumnail
             TRoundedContainer(
